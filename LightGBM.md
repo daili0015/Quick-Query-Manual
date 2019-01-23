@@ -35,7 +35,7 @@ print('随机搜索-最佳模型：',grid.best_estimator_)  # 获取最佳度量
 [参数设定的技巧](https://lightgbm.readthedocs.io/en/latest/Parameters-Tuning.html)
 
 如果不用网格搜索，可以直接用sklearn风格的接口函数
-```
+```python
 model = lgb.LGBMRegressor(num_leaves=31, objective='mse')
 model.fit(X_train, y_train, eval_set=[(X_test, y_test)],
         eval_metric='mse', early_stopping_rounds=5)
@@ -43,7 +43,7 @@ model.fit(X_train, y_train, eval_set=[(X_test, y_test)],
 
 ## 正式训练
 正式训练还是得使用lgb风格的函数来训练，而不是上面的sklearn风格，这样才能调用保存模型的函数。
-```
+```python
 train_data = lgb.Dataset(X_train, label=y_train)
 test_data = lgb.Dataset(X_test, label=y_test)
 
@@ -63,11 +63,11 @@ ypred = model.predict(data, num_iteration=bst.best_iteration)
 
 ## 模型保存
 保存
-```
+```python
 model.save_model('model.txt')
 ```
 导入必须使用Booster
-```
+```python
 import lightgbm as lgb
 model = lgb.Booster(model_file='model.txt')
 fx = model.predict(data_X)
