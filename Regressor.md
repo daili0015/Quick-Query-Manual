@@ -47,7 +47,7 @@ elif choice==8:
     Regressor = BaggingRegressor(n_estimators=100)  
 elif choice==9:
     #### ExtraTree极端随机树回归 ####
-    from sklearn.ensemble import ExtraTreeRegressor
+    from sklearn.tree import ExtraTreeRegressor
     Regressor = ExtraTreeRegressor() 
  
 from sklearn.preprocessing import StandardScaler
