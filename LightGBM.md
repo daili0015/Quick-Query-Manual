@@ -48,9 +48,15 @@ test_data = lgb.Dataset(X_test, label=y_test)
 
 num_iterations = 100
 #设定param为找到的最佳参数
+param = gbm.best_params_
+#在此基础上，增加必要的参数
+param['num_leaves'] = 31
+param['objective'] = 'mse'
+param['boosting'] = 'gbrt'
+param['metric'] = 'mse'
 model = lgb.train(param, train_data, num_iterations, valid_sets=[test_data], early_stopping_rounds=5)
 
-#如果设定了提前结束，就可以这么预测
+#如果设定了early_stopping_rounds提前结束，就可以这么预测
 ypred = model.predict(data, num_iteration=bst.best_iteration)
 ```
 
