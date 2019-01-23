@@ -33,6 +33,7 @@ print('随机搜索-最佳参数：',grid.best_params_)  # 获取最佳度量值
 print('随机搜索-最佳模型：',grid.best_estimator_)  # 获取最佳度量时的分类器模型
 ```
 [参数设定的技巧](https://lightgbm.readthedocs.io/en/latest/Parameters-Tuning.html)
+
 如果不用网格搜索，可以直接用sklearn风格的接口函数
 ```
 model = lgb.LGBMRegressor(num_leaves=31, objective='mse')
