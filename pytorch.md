@@ -2,7 +2,7 @@
 
 ## 数据
 必须变成DataLoader才能用于神经网络的训练，下面是一个标准的方法
-```python
+```python 
 import torch
 from torch.utils.data import DataLoader
 from torch.utils.data import TensorDataset
