@@ -4,5 +4,8 @@
 
 [lgb快速使用](https://github.com/daili0015/Quick-Query-Manual/blob/master/LightGBM.md#lightgbm)
 
-[pytorch用于回归](https://github.com/daili0015/Quick-Query-Manual/blob/master/pytorch_linear.md#pytorch用于数据分析)
+[pytorch线性回归](https://github.com/daili0015/Quick-Query-Manual/blob/master/pytorch_linear.md#pytorch用于数据分析)
+
+## 神经网络
+[pytorch数据增强](https://github.com/daili0015/Quick-Query-Manual/blob/master/pytorch_nn.md#pytorch神经网络常用指令)
 
