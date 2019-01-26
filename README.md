@@ -4,5 +4,5 @@
 
 [lgb快速使用](https://github.com/daili0015/Quick-Query-Manual/blob/master/LightGBM.md#lightgbm)
 
-[pytorch用于回归](https://github.com/daili0015/Quick-Query-Manual/blob/master/pytorch.md#pytorch用于数据分析)
+[pytorch用于回归](https://github.com/daili0015/Quick-Query-Manual/blob/master/pytorch_linear.md#pytorch用于数据分析)
 

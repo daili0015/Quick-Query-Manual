@@ -1,1 +1,1 @@
-# pytorch常用指令
+# pytorch神经网络常用指令
