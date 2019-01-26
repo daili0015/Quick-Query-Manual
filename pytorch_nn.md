@@ -7,7 +7,7 @@ train_tfs = tfs.Compose([
 	#中心crop
 	tfs.CenterCrop(size=(h, w)) #或者填int
 	#随机crop后resize
-    tfs.RandomResizedCrop(size=(32, 32), scale = (0.8, 1.0)),
+	tfs.RandomResizedCrop(size=(32, 32), scale = (0.8, 1.0)),
 	#随机水平翻转
 	tfs.RandomHorizontalFlip(),
 	#resize
