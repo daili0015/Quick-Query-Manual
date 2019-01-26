@@ -1,6 +1,6 @@
 # pytorch数据增强
 
-##　用类封装
+## 用类封装
 ### 定义transform组合
 ```python
 import torchvision.transforms as tfs
