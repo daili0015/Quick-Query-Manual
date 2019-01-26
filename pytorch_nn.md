@@ -50,6 +50,6 @@ if self.transform:
     seg = self.transform[1](seg)
 ```
 
-##　用函数灵活地封装
+## 用函数灵活地封装
 ### 定义transform函数
 
