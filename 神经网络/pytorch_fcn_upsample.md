@@ -60,7 +60,7 @@ if __name__ == '__main__':
     print(y.shape)   
 ```
 ### 从定义的dataset里载入
-这种方法显示的处理后图像有些错误
+这种方法显示的处理后图像有些错误，不知道具体为什么，看起来类似于数值超过255的那种越界错误
 ```python
 import matplotlib.pyplot as plt
 from data import VocFolder
