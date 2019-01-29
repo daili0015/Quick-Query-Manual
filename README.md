@@ -10,3 +10,5 @@
 [pytorch数据增强](https://github.com/daili0015/Quick-Query-Manual/blob/master/pytorch_augment.md#pytorch数据增强)
 
 [pytorch图像分割预处理](https://github.com/daili0015/Quick-Query-Manual/blob/master/pytorch_seg.md#图像分割预处理)
+
+[pytorch-fcn上采样](https://github.com/daili0015/Quick-Query-Manual/blob/master/pytorch_fcn_upsample.md#fcn的双线性插值上采样)
