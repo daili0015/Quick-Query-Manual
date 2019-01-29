@@ -62,7 +62,7 @@ def seg2label(seg, cmap):
 ```python
 class VocFolder(Dataset): #Dataset是ImageFolder的爷爷！！！
 
-    def __init__(self, root, transform=False):
+    def __init__(self, root):
         self.root = root
         self.img_list, self.seg_list = read_imgs(self.root)
         self.img_list, self.seg_list = self._filter_(self.img_list), self._filter_(self.seg_list)
@@ -72,11 +72,8 @@ class VocFolder(Dataset): #Dataset是ImageFolder的爷爷！！！
 
         img = Image.open(self.img_list[index]).convert('RGB')
         seg = Image.open(self.seg_list[index]).convert('RGB') # 1ms
-        
-        if self.transform:
-            img, seg = self.augment(img, seg, size = (256, 384))
 
-        label = seg2label(seg, cmap) # 3ms
+        img, label = self.augment(img, seg, size = (256, 384))
 
         return img, label
 
@@ -108,12 +105,12 @@ class VocFolder(Dataset): #Dataset是ImageFolder的爷爷！！！
 
 查看一下，记得把to_tensor注释掉
 ```python
-fo = VocFolder( './VOCdevkit', True )
-for i in range(10, 20):
-    img, label = fo[i]
-    plt.imshow(img)
-    plt.show()
-    plt.imshow(label)
-    plt.show()
-
+if __name__ == '__main__':
+    fo = VocFolder( './VOCdevkit', True )
+    for i in range(10, 20):
+        img, label = fo[i]
+        plt.imshow(img)
+        plt.show()
+        plt.imshow(label)
+        plt.show()
 ```

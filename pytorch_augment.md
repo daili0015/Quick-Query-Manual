@@ -86,7 +86,10 @@ def transform(self, image, seg, size = None):
 
     # 变成tensor
     image = tf.to_tensor(image)
-    seg = tf.to_tensor(seg)
 
-    return image, seg
+    label = seg2label(seg, cmap) # 先变np类型的label再变tensor
+    label = torch.from_numpy(label)
+
+    return image, label
 ```
+关于seg2label的内容[在这里](https://github.com/daili0015/Quick-Query-Manual/blob/master/pytorch_seg.md#处理标注图)
