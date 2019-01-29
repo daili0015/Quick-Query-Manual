@@ -88,7 +88,7 @@ class VocFolder(Dataset): #Dataset是ImageFolder的爷爷！！！
         return res
 
     def augment(self, image, seg, size = None):
-		#数据增强的实现在
+		#数据增强的实现连接在下面
 
     def all_size(self): #查看数据集的图像尺寸
         sizes = set()
@@ -100,6 +100,7 @@ class VocFolder(Dataset): #Dataset是ImageFolder的爷爷！！！
         return sizes, ratios
 
 ```
+数据增强的[实现](https://github.com/daili0015/Quick-Query-Manual/blob/master/pytorch_augment.md#img与seg同变换)
 查看一下，记得把to_tensor注释掉
 ```python
 fo = VocFolder( './VOCdevkit', True )
