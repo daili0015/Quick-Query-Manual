@@ -7,5 +7,6 @@
 [pytorch线性回归](https://github.com/daili0015/Quick-Query-Manual/blob/master/pytorch_linear.md#pytorch用于数据分析)
 
 ## 神经网络
-[pytorch数据增强](https://github.com/daili0015/Quick-Query-Manual/blob/master/pytorch_nn.md#pytorch神经网络常用指令)
+[pytorch数据增强](https://github.com/daili0015/Quick-Query-Manual/blob/master/pytorch_augment.md#pytorch数据增强)
 
+[pytorch图像分割预处理](https://github.com/daili0015/Quick-Query-Manual/blob/master/pytorch_seg.md#图像分割预处理)
