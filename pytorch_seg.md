@@ -16,9 +16,13 @@ def read_imgs(root, train = True):
 ```
 ### 处理标注图
 把原来的彩色分割图片变成训练需要的tensor
+
 首先获得一个数组cmap，它在指定的下标处存储了类别i
+
 cmap[ 颜色对应的哈希值 ] = 类别i
+
 只有21个地方的值有i，只有它们是有意义的
+
 ```python
 import numpy as np
 # RGB color for each class
@@ -101,6 +105,7 @@ class VocFolder(Dataset): #Dataset是ImageFolder的爷爷！！！
 
 ```
 数据增强的[实现](https://github.com/daili0015/Quick-Query-Manual/blob/master/pytorch_augment.md#img与seg同变换)
+
 查看一下，记得把to_tensor注释掉
 ```python
 fo = VocFolder( './VOCdevkit', True )
