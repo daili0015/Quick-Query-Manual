@@ -13,4 +13,4 @@
 | 数据预处理 | 网络操作 | 训练 |
 | :------: | :------: | :------: |
 | [pytorch数据增强](https://github.com/daili0015/Quick-Query-Manual/blob/master/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/pytorch_augment.md#pytorch数据增强) | [fcn上采样](https://github.com/daili0015/Quick-Query-Manual/blob/master/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/pytorch_fcn_upsample.md#fcn的双线性插值上采样) | [计算MIU](https://github.com/daili0015/Quick-Query-Manual/blob/master/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/pytorch_IOU.md#计算iou值) |
-| [语义分割预处理](ttps://github.com/daili0015/Quick-Query-Manual/blob/master/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/pytorch_seg.md#图像分割预处理) | - | - |
+| [语义分割预处理](https://github.com/daili0015/Quick-Query-Manual/blob/master/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/pytorch_seg.md#图像分割预处理) | - | - |
