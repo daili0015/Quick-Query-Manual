@@ -7,7 +7,7 @@ import os
 def read_imgs(root, train = True):
     # you can see a folder named 'VOC2012' under root
     txt_fname = os.path.join(root, 'VOC2012\ImageSets\Segmentation', 'train.txt' 
-        if train else val.txt)
+        if train else 'val.txt')
     with open(txt_fname, 'r') as f:
         images = f.read().split()
     imgs = [os.path.join(root, 'VOC2012\JPEGImages',  i+'.jpg') for i in images]
