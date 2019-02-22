@@ -58,7 +58,7 @@ param['metric'] = 'mse'
 model = lgb.train(param, train_data, num_iterations, valid_sets=[test_data], early_stopping_rounds=5)
 
 #如果设定了early_stopping_rounds提前结束，就可以这么预测
-ypred = model.predict(data, num_iteration=bst.best_iteration)
+ypred = model.predict(data, num_iteration=model.best_iteration)
 ```
 
 ## 模型保存
